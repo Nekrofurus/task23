@@ -2,10 +2,14 @@
 Console.WriteLine("Введите количество элементов таблици кубов");
 int number = Convert.ToInt32(Console.ReadLine());
 var i = 1;
-    for(i = 1; i < number; i++)
+int cube = Cube(number);
+int Cube(int num)
+{
+    for(i = 1; i < num; i++)
     {
-        int x = i;
-        int cubeTabl = x * x * x;
+        int cubeTabl = i * i * i;
         Console.Write($"{cubeTabl} ,");
     }
-
+return num*num*num;
+}
+Console.WriteLine(cube);
